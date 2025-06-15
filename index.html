@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baba'nın Tır Kaçışı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>🚛 Baba'nın Tır Kaçışı</h1>
+    <button onclick="startGame()">Oyuna Başla</button>
+  </div>
+
+  <div id="gameOverScreen" style="display:none;">
+    <h2>YAKALANDIN! 🚓</h2>
+    <button onclick="restartGame()">Yeniden Oyna</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="ui">
+    <span id="score">Altın: 0</span>
+    <span id="time">Süre: 0s</span>
+  </div>
+
+  <audio id="bgMusic" loop autoplay>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
